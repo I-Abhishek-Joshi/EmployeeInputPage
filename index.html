@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Employee Input Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="modal-container hiding-input">
+            <div class="modal">
+                <img src="https://shuvamk.github.io/employee-form/assets/success.png" alt="">
+                <p>You're a good employee! Details are saved. </p>
+                <button id="modalButton">Got it</button>
+            </div>
+        </div>
+        <div class="header">
+            <p>Employee Input Form</p>
+        </div>
+    
+        <div class="form-container">
+            <form action="">
+                <div class="emp-name">
+                    <div class="text-input">
+                        <label for="" >First Name</label>
+                         <input type="text" id="firstName" autocomplete="off">
+                         <small class="error-msg hiding-input" id="smallFirstName">Please enter a vaild first name</small>
+                     </div>
+                     <div class="text-input">
+                         <label for="" >Last Name</label>
+                         <input type="text" id="lastName">
+                         <small class="error-msg hiding-input" id="smallLastName">Please enter a vaild last name</small>
+                     </div>
+                </div>
+                <div class="optional-select">
+                    <div class="optional-input">
+                        <label for="" >Gender: </label>
+                         <div class="switch" id="male">Male</div>
+                         <div class="switch" id="female">Female</div><br>
+                          <small class="error-msg hiding-input" id="smallGender">Please choose a gender</small>
+                    </div>
+                    <div class="optional-input" id="temp">
+                        <label for="" >Marital status: </label>
+                        <div class="switch" id="married">Married</div>
+                        <div class="switch" id="unmarried">Unmarried</div><br>
+                         <small class="error-msg hiding-input" id="smallMaritalStatus">Please select a marital status</small>
+                    </div>
+                </div>
+
+                <div class="emp-name hiding-input temp-margin" id="spouseInput">
+                    <div class="text-input">
+                        <label for="" >Spouse First Name</label>
+                         <input type="text" id="sFirstName"><br>
+                         <small class="error-msg hiding-input" id="smallSpouseFirstName">Please enter spouse first name</small>
+                     </div>
+                     <div class="text-input">
+                         <label for="" >Spouse Last Name</label>
+                         <input type="text" id="sLastName"><br>
+                         <small class="error-msg hiding-input" id="smallSpouseLastName">Please enter spouse last name</small>
+                     </div>
+                </div>
+
+                <div class="other-details">
+                    <p>Other Details</p>
+                    <textarea id="otherDetails"></textarea>
+
+                    <div class="terms-condition">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I accept <a href="">Terms and Conditions</a></label><br>
+                         <small class="error-msg hiding-input" id="smallTC">Please accept the T&C</small>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="mybuttons" id="resetButton" type="button">RESET</button>
+                        <button class="mybuttons" id="saveButton" type="button">SAVE</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

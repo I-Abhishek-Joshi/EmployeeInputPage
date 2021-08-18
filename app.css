@@ -1,0 +1,183 @@
+
+p, img, a, label{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    outline-color: gray;
+}
+::after, ::before{
+    font-family: Poppins, sans-serif;
+}
+input{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+textarea{
+    font-size: 15px;
+}
+.container {
+    max-width: 520px;
+    width: 100%;
+    margin: 10px auto;
+    box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.add-filter{
+    filter: blur(3px);
+}
+
+
+/*****************************************/
+.modal-container{
+    max-width: 520px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: transparent;
+}
+.modal{
+    max-width: 520px;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    box-shadow: 0 5px 10px 2px rgba(0, 128, 128, 0.5);
+}
+.modal img{
+    width: 100%;
+    height: 50px;
+    flex: 1;
+}
+.modal button{
+    padding: 3px 5px;
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px auto 0;
+    background-color: white;
+    color: teal;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.modal button:hover{
+    transform: scale(1.05);
+}
+/**************************************/
+.header{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.form-container{
+    background-color: white;
+}
+
+.header p{
+    font-size: 40px;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;   
+}
+.emp-name{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.emp-name input{
+    width: 100%;
+    height: 30px;
+}
+.text-input{
+    max-width: 100%;
+    padding-top: 20px;
+}
+
+
+.optional-input{
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+.switch{
+    border: 1px solid gray;
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: gray;
+    margin-left: 10px;
+}
+.switch:hover{
+    border: 2px solid teal;
+    color: teal;
+}
+.switch-again{
+    border: 2px solid teal;
+    color: teal;
+}
+.hiding-input{
+    display: none;
+}
+.temp-margin{
+    margin-top: 20px;
+}
+.other-details{
+    padding-top: 50px;
+}
+.other-details textarea{
+    width: 100%;
+    resize: vertical;
+    height: 80px;
+}
+.terms-condition{
+    padding-top: 20px;
+}
+.buttons{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+.mybuttons{
+    background-color: teal;
+    padding: 10px 30px;
+    border-radius: 10%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input:focus, textarea:focus, input:hover, textarea:hover{
+    transform: scale(1.05);
+    outline: none;
+    border: 3px solid teal;
+}
+.error-msg{
+    color: red;
+    font-family: Poppins, sans-serif;
+}
+
+/********************************************************************************/
