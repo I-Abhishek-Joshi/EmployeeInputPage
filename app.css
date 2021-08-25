@@ -181,3 +181,33 @@ input:focus, textarea:focus, input:hover, textarea:hover{
 }
 
 /********************************************************************************/
+@media(max-width: 550px){
+    .modal{
+        max-width: 520px;
+        width: 40%;
+        height: 40%;
+    }
+}
+@media (max-width: 450px) {
+    .header p{
+        font-size: 25px;
+    }
+    p, img, a, label{
+        font-size: 15px;
+    }
+    input, textarea{
+        font-size: 12px;
+    }
+    .switch{
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    form{
+        width: 90%;
+    }
+    .modal{
+        max-width: 520px;
+        width: 55%;
+        height: 40%;
+    }
+}
